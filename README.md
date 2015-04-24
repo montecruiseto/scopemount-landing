@@ -1,2 +1,2 @@
 # scopemount-landing
-One pager for Scopemount
+One pager for scopemount.
