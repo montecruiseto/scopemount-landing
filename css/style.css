@@ -5,7 +5,7 @@
 /* styles from flat-ui-free2.0.0-fix.less files */
 body {
   color: #34495e;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -13,11 +13,11 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 a {
-  color: #16a085;
+  color: chocolate;
   text-decoration: none;
   -webkit-transition: color 0.25s, background 0.25s;
   -moz-transition: color 0.25s, background 0.25s;
@@ -25,7 +25,7 @@ a {
   transition: color 0.25s, background 0.25s;
 }
 a:hover {
-  color: #1abc9c;
+  color: chocolate;
   text-decoration: none;
 }
 h1,
@@ -510,7 +510,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #2c3e50;
 }
 h1 {
@@ -538,7 +538,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
@@ -783,7 +783,7 @@ header .brand {
   font-size: 25px;
   font-weight: normal;
   color: #34495e;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
   letter-spacing: -1px;
   color: #2c3e50;
@@ -823,11 +823,17 @@ section * {
  * Header 14 stylesheet
  * */
 .header-14-sub {
-  color: #bdc3c7;
   position: relative;
+  display: table;
+  width: 100%;
+  vertical-align: middle;
+  color: white;
   padding-top: 95px;
-  padding-bottom: 95px;
+  padding-bottom: 120px;
   text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .header-14-sub h1,
 .header-14-sub .h1,
@@ -841,7 +847,7 @@ section * {
 .header-14-sub .h5,
 .header-14-sub h6,
 .header-14-sub .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   color: white;
 }
 .header-14-sub h1 {
@@ -862,13 +868,26 @@ section * {
 .header-14-sub h3 {
   margin: 0 0 30px;
 }
+@media (max-width: 480px) {
+  .header-14-sub {
+    padding-bottom: 50px;
+  }
+}
+.header-14-sub .background {
+  background: -webkit-radial-gradient(center, ellipse cover, #ffaf4b 0%, #ff920a 100%);
+}
+.header-14-sub .container {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
 .header-14-sub .header-14 {
   margin-bottom: 65px;
   text-align: center;
   font-size: 13px;
   font-weight: normal;
   color: white;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 800;
   letter-spacing: 2px;
 }
@@ -882,7 +901,7 @@ section * {
   display: table;
   border-collapse: collapse;
   padding: 0;
-  margin: 190px auto 170px;
+  margin: 140px auto 170px;
   background: transparent;
   color: white;
 }
@@ -911,7 +930,7 @@ section * {
   font-weight: normal;
   color: white;
 }
-@media (max-width: 480px) {
+@media (max-width: 540px) {
   .header-14-sub .hero-unit {
     margin: 0 auto 65px;
   }
@@ -938,7 +957,7 @@ section * {
   border-radius: 0 6px 6px 0;
   border: 0;
   color: #fff;
-  background: #1abc9c;
+  background: #383737;
   line-height: 22px;
   font-size: 17px;
   font-weight: 500;
@@ -983,31 +1002,4 @@ section * {
   .header-14-sub .subscribe-form .input-group .btn {
     margin-top: 15px;
   }
-}
-.header-14-sub {
-  display: table;
-  width: 100%;
-  vertical-align: middle;
-  padding-bottom: 120px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-@media (max-width: 480px) {
-  .header-14-sub {
-    padding-bottom: 50px;
-  }
-}
-@media (max-width: 540px) {
-  .header-14-sub .hero-unit {
-    margin: 0 auto 65px;
-  }
-}
-.header-14-sub .background {
-  background: -webkit-radial-gradient(center, ellipse cover, #72bfdb 0%, #51b9e2 23%, #2da0dc 57%, #287fc1 85%, #0072af 100%);
-}
-.header-14-sub .container {
-  width: 100%;
-  display: table-cell;
-  vertical-align: middle;
 }
