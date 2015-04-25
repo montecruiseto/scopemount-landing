@@ -94,7 +94,7 @@ var config = {
 
 gulp.task('watch', ['build'], function() {
     browserSync(config);
-    gulp.watch("source/styles/**/*.scss", ['less']);
+    gulp.watch("source/styles/**/*.less", ['less']);
     gulp.watch("source/index.html", ['static', 'bs-reload']);
     gulp.watch("source/scripts/main.js", ['js', 'bs-reload']);
 });
