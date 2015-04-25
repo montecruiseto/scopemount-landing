@@ -5,12 +5,12 @@
 var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     del = require('del'),
-    sass = require('gulp-ruby-sass'),
-    handlebars = require('gulp-handlebars'),
     defineModule = require('gulp-define-module'),
     declare = require('gulp-declare'),
     deploy = require('gulp-gh-pages'),
-    runSequence = require('run-sequence');
+    runSequence = require('run-sequence'),
+    less = require('gulp-less'),
+    path = require('path');
 
 
 /*
@@ -23,19 +23,19 @@ gulp.task('clean', function(cb) {
 
 
 /*
- * Task to compile our Sass files
+ * Task to compile our Less files
  */
 
-gulp.task('sass', function() {
-    return sass('source/styles/mnml.scss')
-        .on('error', function(err) {
-            console.error('Error!', err.message);
-        })
-        .pipe(gulp.dest('build/css'))
-        .pipe(browserSync.reload({
-            stream: true
-        }));
-});
+ gulp.task('less', function () {
+   return gulp.src('source/styles/style.less')
+     .pipe(less({
+       paths: [ path.join(__dirname, 'less', 'includes') ]
+     }))
+     .pipe(gulp.dest('build/css'))
+     .pipe(browserSync.reload({
+         stream: true
+     }));
+ });
 
 /*
  * Task to build our Javascript
@@ -52,12 +52,10 @@ gulp.task('js', function() {
 //**************** TODO - concatenate github fork css to main stylesheet
 
 gulp.task('static', function() {
-    gulp.src(['source/index.html', 'source/CNAME', 'source/*ico' ])
+    gulp.src(['source/index.html', 'source/CNAME', 'source/*ico', 'source/img/**/*' ])
         .pipe(gulp.dest('build'));
-    gulp.src(['source/styles/lib/*.css'])
+    gulp.src(['source/styles/*.css'])
         .pipe(gulp.dest('build/css'));
-    gulp.src('source/data/tracks.json')
-        .pipe(gulp.dest('build/data'));
 });
 
 
@@ -66,7 +64,7 @@ gulp.task('static', function() {
  */
 
 gulp.task('build', ['clean'], function(cb) {
-    runSequence(['sass', 'static', 'js'], cb);
+    runSequence(['less', 'static', 'js'], cb);
 });
 
 
@@ -96,7 +94,7 @@ var config = {
 
 gulp.task('watch', ['build'], function() {
     browserSync(config);
-    gulp.watch("source/styles/**/*.scss", ['sass']);
+    gulp.watch("source/styles/**/*.scss", ['less']);
     gulp.watch("source/index.html", ['static', 'bs-reload']);
     gulp.watch("source/scripts/main.js", ['js', 'bs-reload']);
 });
