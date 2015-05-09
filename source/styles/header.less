@@ -11,17 +11,38 @@
     h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
         font-family: @font-family-base;
         color: @brand-primary;
+        font-weight: 100;
     }
     h1 {
-        font-size: 100px;
-        color: moccasin;
-        font-weight: 100;
         text-transform: uppercase;
-        letter-spacing: -12px;
+        font-size: 40px;
+        letter-spacing: -3px;
+        @media (min-width: 572px) {
+           font-size: 60px;
+           letter-spacing: -5px;
+        }
+        @media (min-width: 1000px) {
+           font-size: 100px;
+           letter-spacing: -6px;
+        }
     }
     h3 {
-        font-size: 25px;
-        font-weight: 100;
+        font-size: 23px;
+        line-height: 26px;
+        margin: 0 0 40px;
+        @media (min-width: 572px) {
+           font-size: 25px;
+           line-height: 40px;
+        }
+        .fa {
+          transform: translate(0, 4px);
+        }
+    }
+    a {
+        font-weight: 400;
+        &:hover, &:focus {
+            color: @brand-primary;
+        }
     }
     padding-top: 95px;
     padding-bottom: 120px;
@@ -29,9 +50,6 @@
     @media (max-width: 480px) {
         padding-top: 50px;
         padding-bottom: 50px;
-    }
-    h3 {
-        margin: 0 0 30px;
     }
     .box-sizing(border-box);
     @media (max-width: 480px) {
@@ -41,10 +59,10 @@
         width: 100%;
         margin: auto;
         background-size: 100%;
-        background-image: -webkit-gradient(50% 35%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
-        background-image: -webkit-radial-gradient(50% 35%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
-        background-image: -moz-radial-gradient(50% 35%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
-        background-image: -o-radial-gradient(50% 35%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
+        background-image: -webkit-gradient(50% 35%, rgba(255, 228, 181, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
+        background-image: -webkit-radial-gradient(50% 35%, rgba(255, 228, 181, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
+        background-image: -moz-radial-gradient(50% 35%, rgba(255, 228, 181, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
+        background-image: -o-radial-gradient(50% 35%, rgba(255, 228, 181, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
         background-repeat: no-repeat;
     }
     .container {
@@ -83,7 +101,7 @@
     }
     .subscribe-form {
         form {
-            margin: 40px 0 10px;
+            margin: 10px 0 10px;
             .input-group {
                 input[type="text"] {
                     border-right: 0;
@@ -140,10 +158,11 @@
         }
         .btn.btn-primary {
             &:hover, &:focus {
-                background-color: darkslategrey;
+                background-color: burlywood;
+                color: sienna;
             }
             &:active, &.active {
-                background-color: mix(darkslategrey, black, 85%);
+                background-color: mix(burlywood, black, 85%);
             }
         }
         @media (max-width: 480px) {
