@@ -12,7 +12,7 @@
   padding: 2px 0;
 
   /* Set the base colour */
-  background-color: #a00;
+  background-color: burlywood;
 
   /* Set a gradient: transparent black at the top to almost-transparent black at the bottom */
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.15)));
@@ -28,7 +28,7 @@
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
 
   /* Set the font */
-  font: 700 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 600 14px "Quicksand", sans-serif;
 
   z-index: 9999;
   pointer-events: auto;
@@ -37,7 +37,7 @@
 .github-fork-ribbon a,
 .github-fork-ribbon a:hover {
   /* Set the text properties */
-  color: #fff;
+  color: moccasin;
   text-decoration: none;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -54,8 +54,8 @@
   /* Add "stitching" effect */
   border-width: 1px 0;
   border-style: dotted;
-  border-color: #fff;
-  border-color: rgba(255, 255, 255, 0.7);
+  border-color: moccasin;
+  border-color: moccasin;
 }
 
 .github-fork-ribbon-wrapper {
