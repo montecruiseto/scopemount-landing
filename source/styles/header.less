@@ -2,21 +2,26 @@
  * Header 14 stylesheet
  * */
  .header-14-sub {
+ 	background: url(/bg4.png);
     position: relative;
     display: table;
     width: 100%;
     vertical-align: middle;
-    color: white;
+    color: @brand-primary;
     h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-        font-family: 'Maven Pro', sans-serif;
-        color: white;
+        font-family: @font-family-base;
+        color: @brand-primary;
     }
     h1 {
-        font-weight: 300;
+        font-size: 100px;
+        color: moccasin;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: -12px;
     }
     h3 {
-        .font(32px, white);
-        font-weight: 300;
+        font-size: 25px;
+        font-weight: 100;
     }
     padding-top: 95px;
     padding-bottom: 120px;
@@ -32,8 +37,15 @@
     @media (max-width: 480px) {
       padding-bottom: 50px;
     }
-    .background {
-      background: -webkit-radial-gradient(center, ellipse cover, #5A5D63 0%,#30343C 100%);
+    .radial {
+        width: 100%;
+        margin: auto;
+        background-size: 100%;
+        background-image: -webkit-gradient(50% 35%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
+        background-image: -webkit-radial-gradient(50% 35%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
+        background-image: -moz-radial-gradient(50% 35%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
+        background-image: -o-radial-gradient(50% 35%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
+        background-repeat: no-repeat;
     }
     .container {
       width: 100%;
@@ -43,40 +55,27 @@
     .header-14 {
         margin-bottom: 65px;
         text-align: center;
-        .font(13px, white);
-        font-family: @font-family-demo;
+        .font(13px, @brand-primary);
+        font-family: @font-family-base;
         font-weight: 800;
         letter-spacing: 2px;
-        [class*="fui-"] {
-            margin-bottom: 30px;
-            .font(24px, white);
-        }
     }
     .hero-unit {
         display: table;
         border-collapse: collapse;
         padding: 0;
-        margin: 140px auto 170px;
+        margin: 100px auto 100px;
         background: transparent;
-        color: white;
-        > * {
-            display: table-cell;
-            vertical-align: middle;
-            border: 8px solid #fff;
-            padding: 25px 30px;
-            text-align: left;
-        }
+        color: @brand-primary;
         h1 {
             margin: 0;
-            .font(46px, white);
-            font-weight: 500;
             @media (max-width: 767px) {
                 text-align: center;
             }
         }
         p {
             margin: 0;
-            .font(13px, white);
+            .font(13px, @brand-primary);
         }
         @media (max-width: 540px) {
             margin: 0 auto 65px;
@@ -87,21 +86,28 @@
             margin: 40px 0 10px;
             .input-group {
                 input[type="text"] {
-                    border-color: white;
                     border-right: 0;
                     min-height: 0;
                     @media (max-width: 480px) {
                         min-height: 41px;
                     }
                 }
+                .form-control{
+                    background: transparent;
+                    border-color: @brand-primary;
+                    color: @brand-primary;
+                    border: 1px solid @brand-primary;
+                    line-height: 22px;
+                    height: 44px;
+                }
                 .btn {
                     padding-left: 30px;
                     padding-right: 30px;
                     margin-left: 0;
                     .border-radius(0 6px 6px 0);
-                    border: 0;
-                    color: #fff;
-                    background: #383737;
+                    border: 1px solid @brand-primary;
+                    color: @brand-primary;
+                    background: transparent;
                     line-height: 22px;
                     font-size: 17px;
                     font-weight: 500;
@@ -118,14 +124,26 @@
                     width: 100%;
                   }
                 }
+                ::-webkit-input-placeholder {
+                    color:    @brand-primary;
+                }
+                :-moz-placeholder {
+                    color:    @brand-primary;
+                }
+                ::-moz-placeholder {
+                    color:    @brand-primary;
+                }
+                :-ms-input-placeholder {
+                    color:    @brand-primary;
+                }
             }
         }
         .btn.btn-primary {
             &:hover, &:focus {
-                background-color: @brand-danger;
+                background-color: darkslategrey;
             }
             &:active, &.active {
-                background-color: mix(@brand-danger, black, 85%);
+                background-color: mix(darkslategrey, black, 85%);
             }
         }
         @media (max-width: 480px) {
