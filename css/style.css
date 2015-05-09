@@ -1,11 +1,11 @@
 .dropdown-arrow-inverse {
-  border-bottom-color: #34495e !important;
-  border-top-color: #34495e !important;
+  border-bottom-color: moccasin !important;
+  border-top-color: moccasin !important;
 }
 /* styles from flat-ui-free2.0.0-fix.less files */
 body {
   color: #34495e;
-  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 14px;
   line-height: 1.231;
 }
@@ -13,11 +13,11 @@ input,
 button,
 select,
 textarea {
-  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 14px;
 }
 a {
-  color: chocolate;
+  color: moccasin;
   text-decoration: none;
   -webkit-transition: color 0.25s, background 0.25s;
   -moz-transition: color 0.25s, background 0.25s;
@@ -25,7 +25,7 @@ a {
   transition: color 0.25s, background 0.25s;
 }
 a:hover {
-  color: chocolate;
+  color: moccasin;
   text-decoration: none;
 }
 h1,
@@ -510,7 +510,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #2c3e50;
 }
 h1 {
@@ -538,7 +538,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 16px;
   font-weight: normal;
   color: #7f8c8d;
@@ -783,7 +783,7 @@ header .brand {
   font-size: 25px;
   font-weight: normal;
   color: #34495e;
-  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 800;
   letter-spacing: -1px;
   color: #2c3e50;
@@ -823,11 +823,12 @@ section * {
  * Header 14 stylesheet
  * */
 .header-14-sub {
+  background: url(/bg4.png);
   position: relative;
   display: table;
   width: 100%;
   vertical-align: middle;
-  color: white;
+  color: moccasin;
   padding-top: 95px;
   padding-bottom: 120px;
   text-align: center;
@@ -847,17 +848,19 @@ section * {
 .header-14-sub .h5,
 .header-14-sub h6,
 .header-14-sub .h6 {
-  font-family: 'Maven Pro', sans-serif;
-  color: white;
+  font-family: "Quicksand", sans-serif;
+  color: moccasin;
 }
 .header-14-sub h1 {
-  font-weight: 300;
+  font-size: 100px;
+  color: moccasin;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: -12px;
 }
 .header-14-sub h3 {
-  font-size: 32px;
-  font-weight: normal;
-  color: white;
-  font-weight: 300;
+  font-size: 25px;
+  font-weight: 100;
 }
 @media (max-width: 480px) {
   .header-14-sub {
@@ -873,8 +876,15 @@ section * {
     padding-bottom: 50px;
   }
 }
-.header-14-sub .background {
-  background: -webkit-radial-gradient(center, ellipse cover, #5a5d63 0%, #30343c 100%);
+.header-14-sub .radial {
+  width: 100%;
+  margin: auto;
+  background-size: 100%;
+  background-image: -webkit-gradient(50% 35%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
+  background-image: -webkit-radial-gradient(50% 35%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
+  background-image: -moz-radial-gradient(50% 35%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
+  background-image: -o-radial-gradient(50% 35%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
+  background-repeat: no-repeat;
 }
 .header-14-sub .container {
   width: 100%;
@@ -886,38 +896,21 @@ section * {
   text-align: center;
   font-size: 13px;
   font-weight: normal;
-  color: white;
-  font-family: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: moccasin;
+  font-family: "Quicksand", sans-serif;
   font-weight: 800;
   letter-spacing: 2px;
-}
-.header-14-sub .header-14 [class*="fui-"] {
-  margin-bottom: 30px;
-  font-size: 24px;
-  font-weight: normal;
-  color: white;
 }
 .header-14-sub .hero-unit {
   display: table;
   border-collapse: collapse;
   padding: 0;
-  margin: 140px auto 170px;
+  margin: 100px auto 100px;
   background: transparent;
-  color: white;
-}
-.header-14-sub .hero-unit > * {
-  display: table-cell;
-  vertical-align: middle;
-  border: 8px solid #fff;
-  padding: 25px 30px;
-  text-align: left;
+  color: moccasin;
 }
 .header-14-sub .hero-unit h1 {
   margin: 0;
-  font-size: 46px;
-  font-weight: normal;
-  color: white;
-  font-weight: 500;
 }
 @media (max-width: 767px) {
   .header-14-sub .hero-unit h1 {
@@ -928,7 +921,7 @@ section * {
   margin: 0;
   font-size: 13px;
   font-weight: normal;
-  color: white;
+  color: moccasin;
 }
 @media (max-width: 540px) {
   .header-14-sub .hero-unit {
@@ -939,7 +932,6 @@ section * {
   margin: 40px 0 10px;
 }
 .header-14-sub .subscribe-form form .input-group input[type="text"] {
-  border-color: white;
   border-right: 0;
   min-height: 0;
 }
@@ -948,6 +940,14 @@ section * {
     min-height: 41px;
   }
 }
+.header-14-sub .subscribe-form form .input-group .form-control {
+  background: transparent;
+  border-color: moccasin;
+  color: moccasin;
+  border: 1px solid moccasin;
+  line-height: 22px;
+  height: 44px;
+}
 .header-14-sub .subscribe-form form .input-group .btn {
   padding-left: 30px;
   padding-right: 30px;
@@ -955,9 +955,9 @@ section * {
   -webkit-border-radius: 0 6px 6px 0;
   -moz-border-radius: 0 6px 6px 0;
   border-radius: 0 6px 6px 0;
-  border: 0;
-  color: #fff;
-  background: #383737;
+  border: 1px solid moccasin;
+  color: moccasin;
+  background: transparent;
   line-height: 22px;
   font-size: 17px;
   font-weight: 500;
@@ -978,13 +978,25 @@ section * {
     width: 100%;
   }
 }
+.header-14-sub .subscribe-form form .input-group ::-webkit-input-placeholder {
+  color: moccasin;
+}
+.header-14-sub .subscribe-form form .input-group :-moz-placeholder {
+  color: moccasin;
+}
+.header-14-sub .subscribe-form form .input-group ::-moz-placeholder {
+  color: moccasin;
+}
+.header-14-sub .subscribe-form form .input-group :-ms-input-placeholder {
+  color: moccasin;
+}
 .header-14-sub .subscribe-form .btn.btn-primary:hover,
 .header-14-sub .subscribe-form .btn.btn-primary:focus {
-  background-color: #e74c3c;
+  background-color: darkslategrey;
 }
 .header-14-sub .subscribe-form .btn.btn-primary:active,
 .header-14-sub .subscribe-form .btn.btn-primary.active {
-  background-color: #c44133;
+  background-color: #284343;
 }
 @media (max-width: 480px) {
   .header-14-sub .subscribe-form .input-group,
