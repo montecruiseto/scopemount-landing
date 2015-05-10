@@ -874,7 +874,7 @@ section * {
   line-height: 26px;
   margin: 0 0 40px;
 }
-@media (min-width: 572px) {
+@media (min-width: 769px) {
   .header-14-sub h3 {
     font-size: 25px;
     line-height: 40px;
@@ -889,6 +889,17 @@ section * {
 .header-14-sub a:hover,
 .header-14-sub a:focus {
   color: moccasin;
+}
+.header-14-sub p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: normal;
+  color: moccasin;
+}
+@media (min-width: 769px) {
+  .header-14-sub p {
+    font-size: 17px;
+  }
 }
 @media (max-width: 480px) {
   .header-14-sub {
@@ -941,12 +952,6 @@ section * {
   .header-14-sub .hero-unit h1 {
     text-align: center;
   }
-}
-.header-14-sub .hero-unit p {
-  margin: 0;
-  font-size: 13px;
-  font-weight: normal;
-  color: moccasin;
 }
 @media (max-width: 540px) {
   .header-14-sub .hero-unit {
@@ -1018,7 +1023,6 @@ section * {
 .header-14-sub .subscribe-form .btn.btn-primary:hover,
 .header-14-sub .subscribe-form .btn.btn-primary:focus {
   background-color: burlywood;
-  color: sienna;
 }
 .header-14-sub .subscribe-form .btn.btn-primary:active,
 .header-14-sub .subscribe-form .btn.btn-primary.active {
