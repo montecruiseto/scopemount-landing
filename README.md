@@ -1,2 +1,3 @@
-# scopemount-landing
-One pager for scopemount.
+# Landing page for Scopemount.
+
+![Imgur](http://i.imgur.com/8yYLXiY.jpg)
