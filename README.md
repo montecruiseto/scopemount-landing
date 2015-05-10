@@ -1,3 +1,3 @@
-# Landing page for Scopemount.
+# [Scopemount](http://scopemount.startrack.io/) landing page
 
 ![Imgur](http://i.imgur.com/8yYLXiY.jpg)
