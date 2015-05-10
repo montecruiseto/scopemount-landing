@@ -30,7 +30,7 @@
         font-size: 23px;
         line-height: 26px;
         margin: 0 0 40px;
-        @media (min-width: 572px) {
+        @media (min-width: 769px) {
            font-size: 25px;
            line-height: 40px;
         }
@@ -42,6 +42,13 @@
         font-weight: 400;
         &:hover, &:focus {
             color: @brand-primary;
+        }
+    }
+    p {
+        margin: 0;
+        .font(15px, @brand-primary);
+        @media (min-width: 769px) {
+           font-size: 17px;
         }
     }
     padding-top: 95px;
@@ -90,10 +97,6 @@
             @media (max-width: 767px) {
                 text-align: center;
             }
-        }
-        p {
-            margin: 0;
-            .font(13px, @brand-primary);
         }
         @media (max-width: 540px) {
             margin: 0 auto 65px;
@@ -159,7 +162,6 @@
         .btn.btn-primary {
             &:hover, &:focus {
                 background-color: burlywood;
-                color: sienna;
             }
             &:active, &.active {
                 background-color: mix(burlywood, black, 85%);
