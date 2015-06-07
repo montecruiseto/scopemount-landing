@@ -872,7 +872,7 @@ section * {
 .header-14-sub h3 {
   font-size: 23px;
   line-height: 26px;
-  margin: 0 0 40px;
+  margin: 0px;
 }
 @media (min-width: 769px) {
   .header-14-sub h3 {
@@ -957,6 +957,23 @@ section * {
   .header-14-sub .hero-unit {
     margin: 0 auto 65px;
   }
+}
+.header-14-sub .tagline {
+  margin: 20px 0 0px;
+}
+.header-14-sub .outgoing {
+  margin-right: 15px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+@media (max-width: 540px) {
+  .header-14-sub .outgoing {
+    display: inline-block;
+  }
+}
+.header-14-sub iframe {
+  display: block;
+  margin: 0 auto 20px;
 }
 .header-14-sub .subscribe-form form {
   margin: 10px 0 10px;
