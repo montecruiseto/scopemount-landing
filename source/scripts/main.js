@@ -1,3 +1,7 @@
+//Fire up the syntax highlighter
+hljs.initHighlightingOnLoad();
+
+// Initialize all layout jQuery
 jQuery(document).ready(function($){
 	//store DOM elements
 	var imageWrapper = $('.cd-images-list'),
@@ -14,7 +18,7 @@ jQuery(document).ready(function($){
 	imageWrapper.on('click', 'a', function(event){
 		event.preventDefault();
 		var device = MQ();
-		
+
 		(device == 'mobile') && updateBlock(imagesList.index($(this).parent('li')), 'mobile');
 	});
 
@@ -23,7 +27,7 @@ jQuery(document).ready(function($){
 		var closeBtn = $(this);
 		if( !animating ) {
 			animating = true;
-			
+
 			closeBtn.removeClass('is-scaled-up').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 				contentWrapper.removeClass('is-visible').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 					animating = false;
@@ -41,7 +45,7 @@ jQuery(document).ready(function($){
 			indexVisibleblock = imagesList.index(imageWrapper.children('li.is-selected'));
 
 		if( !direction.hasClass('inactive') ) {
-			var index = ( direction.hasClass('cd-next') ) ? (indexVisibleblock + 1) : (indexVisibleblock - 1); 
+			var index = ( direction.hasClass('cd-next') ) ? (indexVisibleblock + 1) : (indexVisibleblock - 1);
 			updateBlock(index);
 		}
 	});
@@ -63,9 +67,9 @@ jQuery(document).ready(function($){
 			animating = true;
 			var imageItem = imagesList.eq(n),
 				contentItem = contentList.eq(n);
-			
+
 			classUpdate($([imageItem, contentItem]));
-			
+
 			if( device == 'mobile') {
 				contentItem.scrollTop(0);
 				$('.cd-image-block').addClass('content-block-is-visible');
@@ -106,3 +110,5 @@ jQuery(document).ready(function($){
 	}
 
 });
+
+
