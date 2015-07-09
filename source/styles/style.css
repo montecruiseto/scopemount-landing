@@ -13,9 +13,12 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Source Sans Pro", sans-serif;
-  color: #343642;
+  font-family: "Open Sans", sans-serif;
+  color: #515151;
   background-color: #ffffff;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -28,7 +31,9 @@ button {
   border: none;
   background-color: transparent;
   outline: none;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* --------------------------------
@@ -78,15 +83,15 @@ Images block
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(2) {
-  background: #343642 url(../img/img-2.jpg) no-repeat center center;
+  background: #343642 url(../img/laval.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(3) {
-  background: #982b3c url(../img/img-3.jpg) no-repeat center center;
+  background: #982b3c url(../img/laval.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(4) {
-  background: #338899 url(../img/img-4.jpg) no-repeat center center;
+  background: #338899 url(../img/laval.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li > a {
@@ -120,6 +125,7 @@ Images block
   .cd-images-list h2 {
     font-size: 5.5rem;
     text-align: left;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -178,8 +184,8 @@ Content block
 }
 .cd-content-block p {
   margin-bottom: 2em;
-  line-height: 1.6;
-  color: #85868d;
+  line-height: 2;
+  color: #515151;
 }
 .cd-content-block .cd-close {
   /* 'X' icon to close the content block -  mobile only */
@@ -262,7 +268,7 @@ Content block
     /* reset style */
     opacity: 1;
     visibility: visible;
-    padding: 4em 3em;
+    padding: 10% 15%;
   }
   .cd-content-block > ul > li.overflow-hidden {
     /* this class is used during the animation (slider change) to hide the scrolling bar */
@@ -368,13 +374,13 @@ Slider navigation
     height: 50px;
     line-height: 50px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    // background-color: transparent;
     -webkit-transition: background 0.2s;
     -moz-transition: background 0.2s;
     transition: background 0.2s;
   }
   .block-navigation li:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    // background-color: rgba(0, 0, 0, 0.7);
   }
   .block-navigation li:first-of-type {
     float: left;
