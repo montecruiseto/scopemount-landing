@@ -26,16 +26,16 @@ gulp.task('clean', function(cb) {
  * Task to compile our Less files
  */
 
- gulp.task('less', function () {
-   return gulp.src('source/styles/style.less')
-     .pipe(less({
-       paths: [ path.join(__dirname, 'less', 'includes') ]
-     }))
-     .pipe(gulp.dest('build/css'))
-     .pipe(browserSync.reload({
-         stream: true
-     }));
- });
+gulp.task('less', function() {
+    return gulp.src('source/styles/style.less')
+        .pipe(less({
+            paths: [path.join(__dirname, 'less', 'includes')]
+        }))
+        .pipe(gulp.dest('build/css'))
+        .pipe(browserSync.reload({
+            stream: true
+        }));
+});
 
 /*
  * Task to build our Javascript
@@ -52,8 +52,10 @@ gulp.task('js', function() {
 //**************** TODO - concatenate github fork css to main stylesheet
 
 gulp.task('static', function() {
-    gulp.src(['source/index.html', 'source/CNAME', 'source/*ico', 'source/img/**/*' ])
+    gulp.src(['source/index.html', 'source/CNAME', 'source/*ico'])
         .pipe(gulp.dest('build'));
+    gulp.src(['source/img/**/*'])
+        .pipe(gulp.dest('build/img'));
     gulp.src(['source/styles/*.css'])
         .pipe(gulp.dest('build/css'));
 });
@@ -83,7 +85,7 @@ var config = {
     server: {
         baseDir: "./build",
     },
-    browser: "google chrome canary"
+    browser: "google chrome"
 };
 
 
@@ -94,7 +96,7 @@ var config = {
 
 gulp.task('watch', ['build'], function() {
     browserSync(config);
-    gulp.watch("source/styles/**/*.less", ['less']);
+    gulp.watch("source/styles/**/*.css", ['static', 'bs-reload']);
     gulp.watch("source/index.html", ['static', 'bs-reload']);
     gulp.watch("source/scripts/main.js", ['js', 'bs-reload']);
 });
@@ -118,4 +120,3 @@ gulp.task('bs-reload', function() {
 //     return gulp.src(['build/**/*'])
 //         .pipe(deploy());
 // });
-
