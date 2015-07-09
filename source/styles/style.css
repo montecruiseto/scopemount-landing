@@ -66,6 +66,9 @@ body {
   color: #515151;
   background-color: #ffffff;
 }
+i {
+  font-style: italic !important;
+}
 h2 {
   font-family: "Montserrat", sans-serif;
 }
@@ -82,10 +85,10 @@ h2 {
   text-decoration: none !important;
   display: inline-block;
   padding: 2% 8%;
-  border-radius: 35px;
+  border-radius: 5px;
   transition: all 0.16s ease;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 1em;
   font-weight: normal;
   line-height: 1.42857143;
   text-align: center;

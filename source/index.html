@@ -9,7 +9,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/gh-fork-ribbon.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
     <script src="js/modernizr.js"></script>
 
     <!-- Viewport Meta-->
@@ -70,8 +70,8 @@
             <ul>
                 <li class="is-selected">
                     <div id="1/21">
-                        <h2>Theme</h2>
-                        <p>Laval is a colourful book club theme, based on the design of <a href="http://booksandconversations.com/" target="_blank">Books and Conversations</a>. The background colours of each post are randomly generated on each page load using <a href="https://github.com/davidmerfield/randomColor" target="_blank">randomColor.js</a>.</p>
+                        <h2>Design</h2>
+                        <p>Laval is a colourful book club theme, based on the design of <a href="http://booksandconversations.com/" target="_blank">Books and Conversations</a>. The background colours of each post are randomly generated on each page load.</p>
 
                         <a class="btn btn-default" href="http://sm-laval.meteor.com/" target="_blank" role="button">Demo</a>
 
@@ -82,6 +82,18 @@
                         <pre><code >$ meteor add montecruiseto:telescope-theme-sm-magellan</code></pre>
 
                         <p>If you want to customize the theme you can download the <a href="https://github.com/montecruiseto/scopemount" target="_blank">source</a>, extract the Laval theme folder to your Telescope package directory and run the same command as above. Telescope will look for your local package first and use that one.</p>
+
+                        <p>To modify the colours you can change the parameters in 'post_item_laval.js', located in the scripts folder.</p>
+
+<pre>
+<code>Template.post_item.onRendered(function() {
+    $(this.find('.laval-post')).css('background', randomColor({
+        luminosity: 'bright',
+        hue: 'green'
+    }));
+});</code></pre>
+
+                        <p>You can pass <i>light, bright, dark</i> or <i>random</i> to the luminosity property, and <i>monochrome, red, orange, yellow, green, blue, purple </i>or pink to the hue property. </p>
 
                         <h2>Name</h2>
                         <p>This theme was named after the <a href="https://en.wikipedia.org/wiki/List_of_large_optical_telescopes" target="_blank">Laval LMT</a>, a telescope with a rotating 2.7-meter diameter mirror and a surface of liquid mercury, located in Vancouver, Canada.</p>
