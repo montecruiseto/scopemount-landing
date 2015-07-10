@@ -230,19 +230,19 @@ Images block
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(7) {
-  background: #263B3F url(../img/laval.png) no-repeat center center;
+  background: #FBC642 url(../img/palomar.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(8) {
-  background: #338899 url(../img/laval.png) no-repeat center center;
+  background: #2FACA9 url(../img/gemini.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(9) {
-  background: #338899 url(../img/laval.png) no-repeat center center;
+  background: #A030FC url(../img/galileo.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(10) {
-  background: #338899 url(../img/laval.png) no-repeat center center;
+  background: #DABB88 url(../img/newton.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li > a {
