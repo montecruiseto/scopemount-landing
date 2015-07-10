@@ -206,31 +206,31 @@ Images block
 }
 .cd-images-list > li {
   height: 250px;
-  background: #B6E8FF url(../img/laval.png) no-repeat center center;
+  background: #40D2FF url(../img/laval.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(2) {
-  background: #343642 url(../img/laval.png) no-repeat center center;
+  background: #EE1853 url(../img/magellan.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(3) {
-  background: #982b3c url(../img/laval.png) no-repeat center center;
+  background: #67798E url(../img/colossus.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(4) {
-  background: #338899 url(../img/laval.png) no-repeat center center;
+  background: #BAE147 url(../img/lulin.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(5) {
-  background: #338899 url(../img/laval.png) no-repeat center center;
+  background: #14CBCF url(../img/sloan.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(6) {
-  background: #338899 url(../img/laval.png) no-repeat center center;
+  background: #263B3F url(../img/starfire.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(7) {
-  background: #338899 url(../img/laval.png) no-repeat center center;
+  background: #263B3F url(../img/laval.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(8) {
