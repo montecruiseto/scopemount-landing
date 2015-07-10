@@ -612,15 +612,28 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 
 */
 
+
+@media only screen and (max-width: 768px) {
+  pre code {
+      white-space: pre-wrap;
+  }
+
+  .hljs {
+    word-break: break-all;
+    word-wrap: break-word;
+  }
+}
+
 .hljs {
   font-family: monospace;
   display: block;
-  overflow-x: auto;
+  overflow-x: scroll;
   padding: 0.5em;
   background: #23241f;
   -webkit-text-size-adjust: none;
   margin-bottom: 2em;
-  font-size: 1.1em;
+  font-size: 1.2em;
+  line-height: 1.1;
 }
 
 .hljs,
