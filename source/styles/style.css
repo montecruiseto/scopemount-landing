@@ -72,7 +72,19 @@ i {
 h1, h2 {
   font-family: "Montserrat", sans-serif;
 }
-
+.titlestars {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.titlestars iframe {
+ margin-top: 13px;
+}
+@media only screen and (min-width: 768px) {
+  .titlestars {
+      display: none;
+  }
+}
 .cd-content-block a {
   color: #515151;
   text-decoration: underline;
@@ -303,9 +315,6 @@ li.radial {
   width: 100%;
 }
 .cd-images-list h1, .cd-images-list h2 {
-  /* used to vertically align h2 -  mobile version only */
-  display: table-cell;
-  vertical-align: middle;
   text-align: center;
   font-size: 3rem;
   color: #ffffff;
@@ -363,6 +372,13 @@ Logo
     display: block;
     margin-left: 5%;
     margin-top: 15%;
+  }
+  .logo img {
+    display: block;
+  }
+  .logo iframe {
+    margin-left: 94px;
+    margin-top: 15px;
   }
   h2.title {
     display: none;
