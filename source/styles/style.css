@@ -204,7 +204,7 @@ Images block
   display: none;
 }
 .cd-images-list {
-    background: url(../img/bg4.png);
+    background: black url(../img/bg4.png);
      position: relative;
      display: table;
      width: 100%;
@@ -263,6 +263,10 @@ li.radial {
   background: #DABB88 url(../img/newton.png) no-repeat center center;
   background-size: cover;
 }
+.cd-images-list > li:nth-of-type(12) {
+  background: #CCCCCC url(../img/coming.png) no-repeat center center;
+  background-size: cover;
+}
 .cd-images-list > li > a {
   /* used to vertically align the h2 child -  mobile version only */
   display: table;
@@ -280,6 +284,10 @@ li.radial {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.cd-content-block h2 a {
+  text-decoration: none;
+  color: rebeccapurple;
+}
 @media only screen and (min-width: 768px) {
   .cd-images-list::before {
     /* never visible - this is used in jQuery to check the current MQ */
@@ -291,10 +299,20 @@ li.radial {
     cursor: default;
     pointer-events: none;
   }
-  .cd-images-list h1, .cd-images-list h2 {
-    font-size: 5.5rem;
+  .cd-images-list h2 {
+    font-size: 3.5rem;
     text-align: left;
     text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+@media only screen and (min-width: 850px) {
+  .cd-images-list h2 {
+    font-size: 4rem;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .cd-images-list h2 {
+    font-size: 5.5rem;
   }
 }
 /* --------------------------------
