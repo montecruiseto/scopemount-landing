@@ -60,7 +60,7 @@ html {
   font-size: 62.5%;
 }
 
-body {
+body, input, textarea, select, button {
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   color: #515151;
@@ -69,7 +69,7 @@ body {
 i {
   font-style: italic !important;
 }
-h2 {
+h1, h2 {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -269,7 +269,7 @@ li.radial {
   height: 100%;
   width: 100%;
 }
-.cd-images-list h2 {
+.cd-images-list h1, .cd-images-list h2 {
   /* used to vertically align h2 -  mobile version only */
   display: table-cell;
   vertical-align: middle;
@@ -291,7 +291,7 @@ li.radial {
     cursor: default;
     pointer-events: none;
   }
-  .cd-images-list h2 {
+  .cd-images-list h1, .cd-images-list h2 {
     font-size: 5.5rem;
     text-align: left;
     text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.1);
@@ -345,6 +345,198 @@ Logo
     margin-left: 30%;
   }
 }
+/* --------------------------------
+
+Subscribe form
+
+-------------------------------- */
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+.input-group .form-control {
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+.subscribe-form form {
+  margin: 10px 0 10px;
+}
+.subscribe-form form .input-group input[type="text"] {
+  border-right: 0;
+  min-height: 0;
+}
+.subscribe-form form .input-group .form-control {
+  background: transparent;
+  border-color: #515151;
+  color: #515151;
+  border: 1px solid #515151;
+  line-height: 22px;
+  height: 44px;
+  border-right-color: white;
+  font-size: 1.6rem;
+}
+.subscribe-form form .input-group .btn {
+  padding: 10px 30px;
+  margin-left: 0;
+  -webkit-border-radius: 0 6px 6px 0;
+  -moz-border-radius: 0 6px 6px 0;
+  border-radius: 0 6px 6px 0;
+  border: 1px solid #515151;
+  color: #515151;
+  background: transparent;
+  line-height: 22px;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.subscribe-form form .input-group ::-webkit-input-placeholder {
+  font-size: 1.6rem;
+  color: #515151;
+}
+.subscribe-form form .input-group :-moz-placeholder {
+  font-size: 1.6rem;
+  color: #515151;
+}
+.subscribe-form form .input-group ::-moz-placeholder {
+  font-size: 1.6rem;
+  color: #515151;
+}
+.subscribe-form form .input-group :-ms-input-placeholder {
+  font-size: 1.6rem;
+  color: #515151;
+}
+.subscribe-form .btn.btn-Default:hover,
+.subscribe-form .btn.btn-Default:focus {
+  background-color: #515151;
+}
+.subscribe-form .btn.btn-Default:active,
+.subscribe-form .btn.btn-Default.active {
+  background-color: #bd9c73;
+}
+.input-group .form-control:first-child,{
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.input-group .form-control:last-child {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.form-control:-moz-placeholder {
+  color: #999;
+}
+.form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #999;
+}
+.form-control::-webkit-input-placeholder {
+  color: #999;
+}
+.input-group-btn,
+.input-group .form-control {
+  display: table-cell;
+}
+.input-group-btn:not(:first-child):not(:last-child),
+.input-group .form-control:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+input-group .form-control:first-child,
+.input-group-addon:first-child,
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .btn-group > .btn,
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.input-group-addon:first-child {
+  border-right: 0;
+}
+.input-group .form-control:last-child,
+.input-group-addon:last-child,
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group > .btn,
+.input-group-btn:first-child > .btn:not(:first-child),
+.input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .btn, .input-group-btn:first-child > .dropdown-toggle, .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.input-group-btn {
+  position: relative;
+  font-size: 0;
+  white-space: nowrap;
+}
+.input-group-btn > .btn {
+  position: relative;
+}
+.input-group-btn > .btn + .btn {
+  margin-left: -1px;
+}
+.input-group-btn > .btn:hover,
+.input-group-btn > .btn:focus,
+.input-group-btn > .btn:active {
+  z-index: 2;
+}
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .btn-group {
+  margin-right: -1px;
+}
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group {
+  margin-left: -1px;
+}
+.input-group-btn:first-child > .btn {
+  border-right-width: 0;
+  margin-right: -2px;
+}
+.input-group-btn:last-child > .btn {
+  border-left-width: 0;
+  margin-left: -2px;
+}
+.input-group-btn > .btn-default + .btn-default {
+  border-left: 2px solid #bdc3c7;
+}
+.input-group-btn > .btn:first-child + .btn .caret {
+  margin-left: 0;
+}
+
+
+
 
 /* --------------------------------
 
@@ -393,7 +585,7 @@ Content block
   visibility: visible;
   -webkit-overflow-scrolling: touch;
 }
-.cd-content-block h2 {
+.cd-content-block h1, .cd-content-block h2 {
   line-height: 1.2;
   font-weight: 700;
   font-size: 2.3rem;
@@ -491,11 +683,19 @@ Content block
     /* this class is used during the animation (slider change) to hide the scrolling bar */
     overflow: hidden;
   }
-  .cd-content-block h2 {
+  .cd-content-block h1 {
+    font-size: 4.3rem;
+  }
+   .cd-content-block h2 {
     font-size: 3rem;
   }
   .cd-content-block .cd-close {
     display: none;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .cd-content-block h1 {
+    font-size: 6rem;
   }
 }
 
