@@ -204,20 +204,25 @@ Images block
   content: 'mobile';
   display: none;
 }
-.cd-images-list > li {
-  height: 250px;
-  background: white url(../img/bg4.png) center center;
+.cd-images-list {
+    background: url(../img/bg4.png);
+     position: relative;
+     display: table;
+     width: 100%;
+     vertical-align: middle;
 }
 li.radial {
     width: 100%;
     margin: auto;
     background-size: 100%;
-    background-color: #181816;
     background-image: -webkit-gradient(50% 35%, rgba(255, 228, 181, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
     background-image: -webkit-radial-gradient(50% 35%, rgba(255, 228, 181, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
     background-image: -moz-radial-gradient(50% 35%, rgba(255, 228, 181, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
     background-image: -o-radial-gradient(50% 35%, rgba(255, 228, 181, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
     background-repeat: no-repeat;
+}
+.cd-images-list > li {
+  height: 250px;
 }
 .cd-images-list > li:nth-of-type(2) {
   background: #EE1853 url(../img/laval.png) no-repeat center center;
