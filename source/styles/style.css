@@ -198,7 +198,6 @@ Images block
     display: none;
   }
 }
-
 .cd-images-list::before {
   /* never visible - this is used in jQuery to check the current MQ */
   content: 'mobile';
@@ -296,6 +295,54 @@ li.radial {
     font-size: 5.5rem;
     text-align: left;
     text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+/* --------------------------------
+
+Logo
+
+-------------------------------- */
+.logo {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .logo {
+    display: block;
+    margin-left: 5%;
+    margin-top: 15%;
+  }
+  h2.title {
+    display: none;
+  }
+}
+@media only screen and (min-width: 868px) {
+  .logo {
+    margin-left: 10%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .logo {
+    margin-left: 15%;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .logo {
+    margin-left: 24.4444%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .logo {
+    margin-left: 26.6666%;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .logo {
+    margin-left: 28.8888%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .logo {
+    margin-left: 30%;
   }
 }
 
