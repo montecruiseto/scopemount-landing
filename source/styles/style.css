@@ -222,50 +222,79 @@ li.radial {
 }
 .cd-images-list > li {
   height: 250px;
+  background-size: 200% !important;
+  background-position-y: -30px !important;
+}
+@media only screen and (min-width: 400px) {
+  .cd-images-list > li {
+    background-position-y: -90px !important;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .cd-images-list > li {
+    background-position-y: -120px !important;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .cd-images-list > li {
+    background-position-y: -160px !important;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .cd-images-list > li {
+    background-position-y: -200px !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .cd-images-list > li {
+    height: 250px;
+    background-size: cover !important;
+    background-position-y: 0px !important;
+  }
 }
 .cd-images-list > li:nth-of-type(2) {
-  background: #EE1853 url(../img/laval.png) no-repeat center center;
-  background-size: cover;
+  background: #40D2FF url(../img/laval.png) no-repeat center center;
+
 }
 .cd-images-list > li:nth-of-type(3) {
-  background: #67798E url(../img/magellan.png) no-repeat center center;
-  background-size: cover;
+  background: #EE1853 url(../img/magellan.png) no-repeat center center;
+
 }
 .cd-images-list > li:nth-of-type(4) {
-  background: #BAE147 url(../img/colossus.png) no-repeat center center;
-  background-size: cover;
+  background: #67798E url(../img/colossus.png) no-repeat center center;
+
 }
 .cd-images-list > li:nth-of-type(5) {
-  background: #14CBCF url(../img/lulin.png) no-repeat center center;
-  background-size: cover;
+  background: #BAE147 url(../img/lulin.png) no-repeat center center;
+
 }
 .cd-images-list > li:nth-of-type(6) {
-  background: #263B3F url(../img/sloan.png) no-repeat center center;
-  background-size: cover;
+  background: #14CBCF url(../img/sloan.png) no-repeat center center;
+
 }
 .cd-images-list > li:nth-of-type(7) {
-  background: #FBC642 url(../img/starfire.png) no-repeat center center;
-  background-size: cover;
+  background: #263B3F url(../img/starfire.png) no-repeat center center;
+
 }
 .cd-images-list > li:nth-of-type(8) {
-  background: #2FACA9 url(../img/palomar.png) no-repeat center center;
-  background-size: cover;
+  background: #FBC642 url(../img/palomar.png) no-repeat center center;
+
 }
 .cd-images-list > li:nth-of-type(9) {
-  background: #A030FC url(../img/gemini.png) no-repeat center center;
-  background-size: cover;
+  background: #2FACA9 url(../img/gemini.png) no-repeat center center;
+
 }
 .cd-images-list > li:nth-of-type(10) {
-  background: #DABB88 url(../img/galileo.png) no-repeat center center;
-  background-size: cover;
+  background: #8746DB url(../img/galileo.png) no-repeat center center;
+
 }
 .cd-images-list > li:nth-of-type(11) {
   background: #DABB88 url(../img/newton.png) no-repeat center center;
-  background-size: cover;
+
 }
 .cd-images-list > li:nth-of-type(12) {
   background: #CCCCCC url(../img/coming.png) no-repeat center center;
-  background-size: cover;
+
 }
 .cd-images-list > li > a {
   /* used to vertically align the h2 child -  mobile version only */
@@ -284,11 +313,17 @@ li.radial {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.cd-images-list li:not(:first-child) h2 {
+  display: none;
+}
 .cd-content-block h2 a {
   text-decoration: none;
   color: rebeccapurple;
 }
 @media only screen and (min-width: 768px) {
+  .cd-images-list li:not(:first-child) h2 {
+    display: block;
+  }
   .cd-images-list::before {
     /* never visible - this is used in jQuery to check the current MQ */
     content: 'desktop';
