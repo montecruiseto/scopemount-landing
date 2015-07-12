@@ -206,42 +206,56 @@ Images block
 }
 .cd-images-list > li {
   height: 250px;
-  background: #40D2FF url(../img/laval.png) no-repeat center center;
-  background-size: cover;
+  background: white url(../img/bg4.png) center center;
+}
+li.radial {
+    width: 100%;
+    margin: auto;
+    background-size: 100%;
+    background-color: #181816;
+    background-image: -webkit-gradient(50% 35%, rgba(255, 228, 181, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
+    background-image: -webkit-radial-gradient(50% 35%, rgba(255, 228, 181, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
+    background-image: -moz-radial-gradient(50% 35%, rgba(255, 228, 181, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
+    background-image: -o-radial-gradient(50% 35%, rgba(255, 228, 181, 0.25) 0%, rgba(255, 0, 0, 0) 70%);
+    background-repeat: no-repeat;
 }
 .cd-images-list > li:nth-of-type(2) {
-  background: #EE1853 url(../img/magellan.png) no-repeat center center;
+  background: #EE1853 url(../img/laval.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(3) {
-  background: #67798E url(../img/colossus.png) no-repeat center center;
+  background: #67798E url(../img/magellan.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(4) {
-  background: #BAE147 url(../img/lulin.png) no-repeat center center;
+  background: #BAE147 url(../img/colossus.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(5) {
-  background: #14CBCF url(../img/sloan.png) no-repeat center center;
+  background: #14CBCF url(../img/lulin.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(6) {
-  background: #263B3F url(../img/starfire.png) no-repeat center center;
+  background: #263B3F url(../img/sloan.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(7) {
-  background: #FBC642 url(../img/palomar.png) no-repeat center center;
+  background: #FBC642 url(../img/starfire.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(8) {
-  background: #2FACA9 url(../img/gemini.png) no-repeat center center;
+  background: #2FACA9 url(../img/palomar.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(9) {
-  background: #A030FC url(../img/galileo.png) no-repeat center center;
+  background: #A030FC url(../img/gemini.png) no-repeat center center;
   background-size: cover;
 }
 .cd-images-list > li:nth-of-type(10) {
+  background: #DABB88 url(../img/galileo.png) no-repeat center center;
+  background-size: cover;
+}
+.cd-images-list > li:nth-of-type(11) {
   background: #DABB88 url(../img/newton.png) no-repeat center center;
   background-size: cover;
 }
