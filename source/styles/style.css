@@ -842,6 +842,11 @@ Slider navigation
   /* this is the slider navigation - desktop version only */
   display: none;
 }
+.arrows {
+  position: absolute;
+  left: 49%;
+  top: 30%;
+}
 @media only screen and (min-width: 768px) {
   .block-navigation {
     display: block;
