@@ -12,7 +12,14 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
     <script src="js/modernizr.js"></script>
 
-    <!-- Viewport Meta-->
+    <!-- Meta-->
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Scopemount"/>
+    <meta property="og:url" content="http://scopemount.startrack.io/">
+    <meta property="og:title" content="Scopemount: 21 Beautiful themes for Telescope"/>
+    <meta property="og:description" content="Scopemount is a suite of 21 beautiful themes for Telescope, an open source Meteor app that makes it easy to launch communities." />
+    <meta property="og:image" content="http://i.imgur.com/4iyLMl8.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta -->
@@ -27,7 +34,14 @@
 </head>
 
 <body>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <main>
         <div class="cd-image-block">
             <ul class="cd-images-list">
@@ -94,18 +108,21 @@
 
                             <h2>Updates</h2>
                             <p>Want to be notified of new theme releases? (no spam, promise)</p>
-                                <div class="subscribe-form">
-                                    <form action="http://startrack.us10.list-manage.com/subscribe/post" method="POST">
-                                    <input type="hidden" name="u" value="64c33b4b4bf4e8a5650bc6864">
-                                    <input type="hidden" name="id" value="bd295317fa">
-                                        <div class="input-group">
-                                            <input type="email" class="form-control" name="MERGE0" id="MERGE0" placeholder="Enter your email...">
-                                    <span class="input-group-btn">
-                                        <button type="submit" name="submit" class="btn btn-default" type="button">Notify Me</button>
-                                    </span>
-                                        </div>
-                                    </form>
-                                </div>
+                            <div class="subscribe-form">
+                                <form action="http://startrack.us10.list-manage.com/subscribe/post" method="POST">
+                                <input type="hidden" name="u" value="64c33b4b4bf4e8a5650bc6864">
+                                <input type="hidden" name="id" value="bd295317fa">
+                                <span class="sminput">
+                                    <input type="email" class="form-control" name="MERGE0" id="MERGE0" placeholder="Enter your email...">
+                                </span>
+                                    <button type="submit" name="submit" class="btn btn-default" type="button">Notify Me</button>
+                                </form>
+                            </div>
+
+                            <div class="shares">
+                            <div class="smtwitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="montecruiseto">Tweet</a></div>
+                            </div>
+
 		                </div>
 		            </li>
                 <li>
@@ -378,7 +395,8 @@
     ga('create', 'UA-62290592-1', 'auto');
     ga('send', 'pageview');
     </script>
-
+    <!-- Tweet -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </body>
 
 </html>
