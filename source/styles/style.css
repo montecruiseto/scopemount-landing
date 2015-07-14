@@ -628,11 +628,14 @@ Content block
   margin-bottom: 15px;
 }
 .smtwitter {
-  margin-top: 20px;
+  margin-top: 5px;
 
 }
+.twitterfollow {
+  margin-top: 20px;
+}
 .twitterblock {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .cd-content-block p {
   margin-bottom: 2em;
