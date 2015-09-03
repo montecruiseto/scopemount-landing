@@ -52,6 +52,13 @@ table {
 Primary style
 
 -------------------------------- */
+.striker {
+  text-decoration: line-through;
+}
+.legacy {
+  color: #2F7DBA !important;
+  font-style: italic;
+}
 *, *::after, *::before {
   box-sizing: border-box;
 }
